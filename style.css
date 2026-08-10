@@ -160,22 +160,6 @@ p {
     text-align: right;
 }
 
-
-/* Small arrow indicating that the card can open */
-
-.project summary::after {
-    content: "↓";
-    display: inline-block;
-    margin-left: 12px;
-    font-size: 18px;
-    color: #888;
-}
-
-.project[open] summary::after {
-    content: "↑";
-}
-
-
 /* Content inside opened card */
 
 .project-content {
