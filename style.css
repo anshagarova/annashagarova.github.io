@@ -8,7 +8,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: #222;
     background: #f5f5f5;
@@ -45,10 +45,15 @@ nav a {
     margin-right: 25px;
     color: #222;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #e8590c;
+    border-bottom-color: #f5a623;
 }
 
 
@@ -69,6 +74,7 @@ section {
 h2 {
     font-size: 36px;
     margin-bottom: 30px;
+    color: #222;
 }
 
 h3 {
@@ -95,6 +101,7 @@ p {
     background: white;
     padding: 25px;
     border-radius: 10px;
+    border-top: 3px solid #f5a623;
 }
 
 .focus-item h4 {
@@ -120,6 +127,12 @@ p {
 
     /* subtle card shadow */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.project:hover {
+    border-left-color: #f5a623;
 }
 
 
@@ -136,7 +149,7 @@ p {
 }
 
 .project summary:hover {
-    background: #fafafa;
+    background: #fff8ec;
 }
 
 
@@ -155,9 +168,12 @@ p {
 }
 
 .project-type {
-    color: #777;
+    color: #e8590c;
     font-size: 14px;
     text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Content inside opened card */
@@ -174,6 +190,7 @@ p {
 .project-content h3 {
     font-size: 21px;
     margin-top: 40px;
+    color: #222;
 }
 
 .role {
@@ -192,6 +209,25 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 6px;
+}
+
+/* Project links */
+
+.project-links {
+    margin-top: 25px;
+}
+
+.project-links a {
+    color: #e8590c;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #f5a623;
+}
+
+.project-links a:hover {
+    color: #222;
+    border-bottom-color: #222;
 }
 
 /* Game Jam heading */
@@ -200,6 +236,7 @@ p {
     margin-top: 60px;
     margin-bottom: 25px;
     font-size: 28px;
+    color: #222;
 }
 
 
@@ -208,7 +245,15 @@ p {
 ------------------------------ */
 
 #contact a {
+    color: #e8590c;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #f5a623;
+}
+
+#contact a:hover {
     color: #222;
+    border-bottom-color: #222;
 }
 
 
