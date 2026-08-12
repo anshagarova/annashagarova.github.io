@@ -239,6 +239,31 @@ p {
     color: #222;
 }
 
+/* ------------------------------
+CV
+------------------------------ */
+
+.cv-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cv-buttons a {
+    color: #e8590c;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #f5a623;
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.cv-buttons a:hover {
+    color: #222;
+    border-bottom-color: #222;
+}
 
 /* ------------------------------
    CONTACT
